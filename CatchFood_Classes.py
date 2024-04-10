@@ -50,7 +50,7 @@ class UserScore:
         sorted_scores = sorted(scores, key=lambda x: x['score'], reverse=True)
 
         for stats in sorted_scores:
-            text = f"[{s}] Wynik: {stats['score']} - {stats['name']}"
+            text = f"[{s}] Score: {stats['score']} - {stats['name']}"
             if s == 1:
                 text_surface = pygame.font.Font.render(score_font_best, text, True, (255, 215, 0))
             elif s == 2:

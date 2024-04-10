@@ -199,7 +199,7 @@ def single():
                 bonus_time = 0
 
 
-        score_text = pygame.font.Font.render(pygame.font.SysFont("Calibri", 36), f"Wynik: {score}", True, (0, 0, 0))
+        score_text = pygame.font.Font.render(pygame.font.SysFont("Calibri", 36), f"Score: {score}", True, (0, 0, 0))
         # CHECK COLLISION
         for item in food:
             if player.hitbox.colliderect(item.hitbox):
@@ -246,7 +246,7 @@ def main():
     button_scoreboard = Button(892, 500, 4)
 
     icon_menu = MenuIcon(100, 30)
-    text_menu = MenuText(580, 250, 250, 45, background_text="Wpisz swoje imie")
+    text_menu = MenuText(580, 250, 250, 45, background_text="Enter your name")
     error = False  # user_name
     approved = False  # user_name
 
